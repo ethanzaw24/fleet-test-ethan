@@ -5,7 +5,7 @@ helm:
   version: v1.3.2 # Replace with the Longhorn version you'd like to install or upgrade to
   releaseName: longhorn
 
-clusterGroup: downstream-cluster-1
+clusterGroup: downstream-cluster
 
 diff:
   comparePatches:
