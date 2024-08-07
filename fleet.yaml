@@ -2,18 +2,18 @@ defaultNamespace: longhorn-system
 helm:
   repo: https://charts.longhorn.io
   chart: longhorn
-  version: v1.4.4 # Replace with the Longhorn version you'd like to install or upgrade to
+  version: v1.5.5 # Replace with the Longhorn version you'd like to install or upgrade to
   releaseName: longhorn
   force: false
 
-targetCustomizations:
-  - name: ez-rke2-c1
-    clustername: ez-rke2-c1
-    helm:
-      chart: https://github.com/longhorn/charts/releases/download/longhorn-1.5.5/longhorn-1.5.5.tgz
-    values:
-      defaultSettings:
-        backupTarget: 
+# targetCustomizations:
+#   - name: ez-rke2-c1
+#     clustername: ez-rke2-c1
+#     helm:
+#       chart: https://github.com/longhorn/charts/releases/download/longhorn-1.5.5/longhorn-1.5.5.tgz
+#     values:
+#       defaultSettings:
+#         backupTarget: 
 
 clusterGroup: downstream-clusters
 
